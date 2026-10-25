@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en" data-accent="cyan">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandan Kushwaha | BCA Student, Software &amp; Data Analytics Enthusiast</title>
+  <meta name="description"
+    content="Official portfolio and bio-data of Chandan Kushwaha - BCA student at Shri Ram Group of College (Delhi NCR). Skilled in Python, C/C++, Java, SQL, Data Analytics, and Power BI.">
+  <meta name="keywords"
+    content="Chandan Kushwaha, BCA, Shri Ram Group of College, Python, SQL, Power BI, Data Analytics, Rohtas Bihar, Software Engineer">
+  <meta name="author" content="Chandan Kushwaha">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-dark">
+  <!-- Interactive Particle Background Canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Main Navigation Bar -->
+  <header class="navbar-wrapper" id="header">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#hero" class="brand-logo" id="brand-link" aria-label="Chandan Kushwaha Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Chandan</span>
+        <span class="logo-dot">.</span>
+        <span class="logo-role">Kushwaha</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#about" class="nav-link" id="nav-about">About &amp; Bio</a></li>
+        <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Technical Skills</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#family" class="nav-link" id="nav-family">Bio-Data</a></li>
+        <li><a href="#gallery" class="nav-link" id="nav-gallery">Gallery</a></li>
+        <li><a href="#terminal" class="nav-link" id="nav-terminal">Terminal</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Accent Glow Switcher -->
+        <div class="accent-picker" title="Change Theme Accent Glow" id="accent-selector">
+          <button class="accent-btn accent-cyan active" data-accent="cyan" aria-label="Cyan Accent Glow"></button>
+          <button class="accent-btn accent-purple" data-accent="purple" aria-label="Purple Accent Glow"></button>
+          <button class="accent-btn accent-emerald" data-accent="emerald" aria-label="Emerald Accent Glow"></button>
+          <button class="accent-btn accent-amber" data-accent="amber" aria-label="Amber Accent Glow"></button>
+        </div>
+
+        <!-- Audio FX Toggle -->
+        <button class="icon-toggle-btn" id="audio-toggle-btn" title="Toggle UI sound effects"
+          aria-label="Toggle Sound Effects">
+          <span class="audio-icon muted" id="audio-icon">🔇</span>
+        </button>
+
+        <!-- Resume / Bio-Data Modal Trigger -->
+        <button class="btn btn-outline btn-sm" id="btn-open-resume" aria-label="View Bio-Data & Resume">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Bio-Data / CV</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="status-badge" id="availability-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">BCA Student • Tech Explorer • Open for Internships</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Chandan Kushwaha</span>
+          </h1>
+
+          <!-- Dynamic Typing Text -->
+          <div class="hero-subtitle-wrapper">
+            <span class="hero-prefix">Focused on</span>
+            <span class="dynamic-typed-text" id="typed-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate <strong>BCA Scholar</strong> at <strong>Shri Ram Group of College (Delhi NCR)</strong> with a
+            strong <strong>8.36 CGPA</strong>. Deeply interested in Software Engineering, Data Analytics, Python
+            programming, Database Management (SQL), and modern technology solutions.
+          </p>
+
+          <!-- Quick Contact Bar -->
+          <div class="hero-quick-meta">
+            <div class="quick-meta-pill">
+              <span>📍</span> <span>Dinara, Rohtas, Bihar</span>
+            </div>
+            <div class="quick-meta-pill">
+              <span>🎓</span> <span>BCA (2026–2029) • 1st Year</span>
+            </div>
+            <div class="quick-meta-pill">
+              <span>📊</span> <span>CGPA: 8.36 (2nd Sem)</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+              <span>View Technical Work</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#family" class="btn btn-outline" id="hero-btn-biodata">
+              <span>View Bio-Data Profile</span>
+            </a>
+            <a href="https://wa.me/917061350981" target="_blank" rel="noopener noreferrer" class="btn btn-glass"
+              id="hero-btn-whatsapp">
+              <span>💬 WhatsApp Me</span>
+            </a>
+          </div>
+
+          <!-- Metric Badges -->
+          <div class="hero-metrics-grid">
+            <div class="metric-item">
+              <span class="metric-number">8.36</span>
+              <span class="metric-label">Recent CGPA</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">10+</span>
+              <span class="metric-label">Tech Competencies</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">2029</span>
+              <span class="metric-label">Expected Graduation</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number">100%</span>
+              <span class="metric-label">Dedication to Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Real Photo Card -->
+        <div class="hero-visual" id="hero-card-container">
+          <div class="tilt-card-wrapper" id="hero-card">
+            <div class="avatar-card-inner">
+              <div class="avatar-glow-ring"></div>
+              <div class="avatar-frame">
+                <img src="./assets/images/chandan-portrait.jpg" alt="Chandan Kushwaha" class="avatar-img"
+                  id="hero-profile-image">
+              </div>
+
+              <!-- Floating Tech Badges -->
+              <div class="floating-badge badge-k8s" title="Python Programming">
+                <span class="badge-icon">🐍</span>
+                <span class="badge-text">Python</span>
+              </div>
+              <div class="floating-badge badge-react" title="SQL & DBMS">
+                <span class="badge-icon">💾</span>
+                <span class="badge-text">SQL / DBMS</span>
+              </div>
+              <div class="floating-badge badge-node" title="Power BI & Analytics">
+                <span class="badge-icon">📊</span>
+                <span class="badge-text">Power BI</span>
+              </div>
+              <div class="floating-badge badge-aws" title="C & C++ / Java">
+                <span class="badge-icon">☕</span>
+                <span class="badge-text">C++ &amp; Java</span>
+              </div>
+
+              <!-- Live Card Mini-Status -->
+              <div class="card-status-pill">
+                <span class="pill-pulse"></span>
+                <span>Chandan Kushwaha • Rohtas, Bihar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;biography /&gt;</span>
+          <h2 class="section-title">About Chandan Kushwaha</h2>
+          <p class="section-subtitle">Dedicated student, tech enthusiast, and analytical thinker with a disciplined work
+            ethic.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio-card glass-card">
+            <h3 class="card-heading">
+              <span class="code-symbol">&#x2F;&#x2F;</span> Professional Summary
+            </h3>
+            <p>
+              I am <strong>Mr. Chandan Kushwaha</strong>, a first-year <strong>Bachelor of Computer Applications
+                (BCA)</strong> student at <strong>Shri Ram Group of College, Muzaffarnagar (Delhi NCR)</strong>.
+              Originally from <strong>Rohtas, Bihar</strong>, I am pursuing my education with passion and academic
+              dedication, currently achieving an <strong>8.36 CGPA</strong>.
+            </p>
+            <p>
+              My technical focus spans <strong>Software Engineering, Data Analytics, Database Management (SQL), Power
+                BI, Python, C/C++, and Java</strong>. Alongside my technical capabilities, I possess strong
+              communication, customer handling skills, and disciplined problem-solving abilities.
+            </p>
+
+            <div class="about-traits-list">
+              <div class="trait-item">
+                <span class="trait-icon">🎯</span>
+                <div>
+                  <strong>Academic Rigor:</strong> Maintained an outstanding 8.36 CGPA in 2nd semester while continually
+                  mastering modern practical tech stacks.
+                </div>
+              </div>
+              <div class="trait-item">
+                <span class="trait-icon">📊</span>
+                <div>
+                  <strong>Data &amp; Logic Driven:</strong> Keen analytical interest in uncovering actionable business
+                  insights using SQL queries and Power BI visualizations.
+                </div>
+              </div>
+              <div class="trait-item">
+                <span class="trait-icon">⚡</span>
+                <div>
+                  <strong>Continuous Learning:</strong> Regularly reading technical manuals, gym fitness training, and
+                  deep online research to stay ahead in computer science.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Identity Info Card -->
+          <div class="pillars-grid">
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon">🎂</div>
+              <h4 class="pillar-title">Date of Birth &amp; Age</h4>
+              <p class="pillar-desc"><strong>27 March 2007</strong> • Single • Energetic &amp; forward-looking student.
+              </p>
+            </div>
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon">🏛️</div>
+              <h4 class="pillar-title">Academic Institution</h4>
+              <p class="pillar-desc"><strong>Shri Ram Group of College</strong>, Muzaffarnagar, Delhi NCR (Affiliated
+                BCA Program).</p>
+            </div>
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon">📍</div>
+              <h4 class="pillar-title">Hometown &amp; Roots</h4>
+              <p class="pillar-desc"><strong>Sarna Bhanpur, Dinara, Rohtas, Bihar - 802213</strong>.</p>
+            </div>
+            <div class="pillar-card glass-card">
+              <div class="pillar-icon">📱</div>
+              <h4 class="pillar-title">Direct Connection</h4>
+              <p class="pillar-desc"><strong>+91 7061350981</strong> • ckchandankumar272@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;academics /&gt;</span>
+          <h2 class="section-title">Educational Journey</h2>
+          <p class="section-subtitle">A progressive trajectory of learning, foundational schooling, and higher computer
+            education.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- BCA -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">BCA (Bachelor of Computer Applications)</h3>
+                  <span class="company-name">Shri Ram Group of College, Muzaffarnagar, Delhi NCR</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="time-period">2026 — 2029</span>
+                  <span class="badge-tag">Current Status: 1st Year</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Enrolled in the comprehensive 3-year undergraduate degree in computer applications covering core
+                computer science principles, programming, software engineering, and database management.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Academic Performance: <strong>CGPA 8.36</strong> achieved in the 2nd semester examinations.</li>
+                <li>Core Coursework: Data Structures, C/C++, DBMS, Python, Computer Networks, and Operating Systems.
+                </li>
+                <li>Expected Year of Graduation: <strong>2029</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Class 12th -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Intermediate (Class 12th)</h3>
+                  <span class="company-name">BSEB (Bihar School Examination Board), Patna</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="time-period">Passed in 2025</span>
+                  <span class="badge-tag">Score: 56.4%</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Completed Senior Secondary education with foundational analytical, scientific, and reasoning coursework
+                under the state board.
+              </p>
+            </div>
+          </div>
+
+          <!-- Class 10th -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Matriculation (Class 10th)</h3>
+                  <span class="company-name">BSEB (Bihar School Examination Board), Patna</span>
+                </div>
+                <div class="timeline-meta">
+                  <span class="time-period">Passed in 2023</span>
+                  <span class="badge-tag">Score: 57.6%</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Completed secondary school education with strong discipline, mathematics, science, and computer basics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;arsenal /&gt;</span>
+          <h2 class="section-title">Technical Skills &amp; Proficiencies</h2>
+          <p class="section-subtitle">Programming languages, database technologies, analytics tools, and professional
+            soft skills.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-tab-nav" role="tablist">
+          <button class="skill-tab-btn active" data-tab="all" role="tab">All Skills</button>
+          <button class="skill-tab-btn" data-tab="programming" role="tab">Programming</button>
+          <button class="skill-tab-btn" data-tab="data" role="tab">Data &amp; Analytics</button>
+          <button class="skill-tab-btn" data-tab="systems" role="tab">Systems &amp; Tools</button>
+          <button class="skill-tab-btn" data-tab="softskills" role="tab">Professional</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Python -->
+          <div class="skill-card glass-card" data-category="programming">
+            <div class="skill-header">
+              <span class="skill-badge-icon">🐍</span>
+              <div class="skill-info">
+                <h3 class="skill-name">Python Programming</h3>
+                <span class="skill-level-text">Core Language</span>
+              </div>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-fill" style="width: 88%;"></div>
+            </div>
+            <p class="skill-desc">OOP concepts, scripting, data structures, automation, and data analytics library
+              fundamentals.</p>
+          </div>
+
+          <!-- C / C++ -->
+          <div class="skill-card glass-card" data-category="programming">
+            <div class="skill-header">
+              <span class="skill-badge-icon">⚙️</span>
+              <div class="skill-info">
+                <h3 class="skill-name">C / C++</h3>
+                <span class="skill-level-text">Foundations &amp; Logic</span>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-fill" style="width: 85%;"></div>
+            </div>
+            <p class="skill-desc">Memory management, pointers, algorithm design, structure modeling, and problem
+              solving.</p>
+          </div>
+
+          <!-- Java -->
+          <div class="skill-card glass-card" data-category="programming">
+            <div class="skill-header">
+              <span class="skill-badge-icon">☕</span>
+              <div class="skill-info">
+                <h3 class="skill-name">Java</h3>
+                <span class="skill-level-text">Object-Oriented</span>
+              </div>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-fill" style="width: 82%;"></div>
+            </div>
+            <p class="skill-desc">Classes, inheritance, polymorphism, exception handling, and enterprise development
+              basics.</p>
+          </div>
+
+          <!-- SQL & DBMS -->
+          <div class="skill-card glass-card" data-category="data">
+            <div class="skill-header">
+              <span class="skill-badge-icon">💾</span>
+              <div class="skill-info">
+                <h3 class="skill-name">SQL &amp; DBMS</h3>
+                <span class="skill-level-text">Database Management</span>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-fill" style="width: 90%;"></div>
+            </div>
+            <p class="skill-desc">Relational schema design, SQL CRUD queries, joins, normalization, indexing, and
+              integrity constraints.</p>
+          </div>
+
+          <!-- Power BI & Data Analytics -->
+          <div class="skill-card glass-card" data-category="data">
+            <div class="skill-header">
+              <span class="skill-badge-icon">📊</span>
+              <div class="skill-info">
+                <h3 class="skill-name">Power BI &amp; Data Analytics</h3>
+                <span class="skill-level-text">Business Intelligence</span>
+              </div>
+              <span class="skill-percent">86%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-fill" style="width: 86%;"></div>
+            </div>
+            <p class="skill-desc">Interactive dashboard creation, KPI reports, data transformation, charts, and business
+              analytics.</p>
+          </div>
+
+          <!-- Software Engineering -->
+          <div class="skill-card glass-card" data-category="systems">
+            <div class="skill-header">
+              <span class="skill-badge-icon">🏗️</span>
+              <div class="skill-info">
+                <h3 class="skill-name">Software Engineering</h3>
+                <span class="skill-level-text">Methodology</span>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-fill" style="width: 85%;"></div>
+            </div>
+            <p class="skill-desc">SDLC lifecycle, requirement analysis, modular design, clean coding practices, and
+              testing.</p>
+          </div>
+
+          <!-- Computer Networks & OS -->
+          <div class="skill-card glass-card" data-category="systems">
+            <div class="skill-header">
+              <span class="skill-badge-icon">🌐</span>
+              <div class="skill-info">
+                <h3 class="skill-name">Networks &amp; Operating Systems</h3>
+                <span class="skill-level-text">Core CS</span>
+              </div>
+              <span class="skill-percent">84%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-fill" style="width: 84%;"></div>
+            </div>
+            <p class="skill-desc">OS process management, memory paging, TCP/IP, OSI model, IP routing, and system
+              architecture.</p>
+          </div>
+
+          <!-- GitHub & Version Control -->
+          <div class="skill-card glass-card" data-category="systems">
+            <div class="skill-header">
+              <span class="skill-badge-icon">🐙</span>
+              <div class="skill-info">
+                <h3 class="skill-name">GitHub &amp; Git</h3>
+                <span class="skill-level-text">Version Control</span>
+              </div>
+              <span class="skill-percent">87%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-fill" style="width: 87%;"></div>
+            </div>
+            <p class="skill-desc">Repositories, commits, branching, pull requests, collaboration, and project hosting.
+            </p>
+          </div>
+
+          <!-- Communication & Customer Handling -->
+          <div class="skill-card glass-card" data-category="softskills">
+            <div class="skill-header">
+              <span class="skill-badge-icon">🤝</span>
+              <div class="skill-info">
+                <h3 class="skill-name">Communication &amp; Handling</h3>
+                <span class="skill-level-text">Interpersonal</span>
+              </div>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-progress-bar">
+              <div class="skill-fill" style="width: 92%;"></div>
+            </div>
+            <p class="skill-desc">Active listening, effective customer interaction, team coordination, and client
+              support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bio-Data & Family Details Section -->
+    <section class="section family-section" id="family">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;personal-record /&gt;</span>
+          <h2 class="section-title">Complete Bio-Data Profile</h2>
+          <p class="section-subtitle">Verified personal information, family background, and residential details.</p>
+        </div>
+
+        <div class="biodata-grid">
+          <!-- Personal Particulars -->
+          <div class="biodata-card glass-card">
+            <div class="biodata-card-header">
+              <span class="biodata-badge-icon">👤</span>
+              <h3 class="biodata-title">Personal Particulars</h3>
+            </div>
+            <div class="biodata-list">
+              <div class="bio-row">
+                <span class="bio-key">Full Name:</span>
+                <span class="bio-val"><strong>Mr. Chandan Kushwaha</strong></span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key">Date of Birth:</span>
+                <span class="bio-val">27 March 2007</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key">Religion:</span>
+                <span class="bio-val">Hindu</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key">Caste:</span>
+                <span class="bio-val">Kushwaha</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key">Marital Status:</span>
+                <span class="bio-val">Single / Unmarried</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key">Mobile Number:</span>
+                <span class="bio-val"><a href="tel:+917061350981" class="bio-link">+91 7061350981</a></span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key">Email Address:</span>
+                <span class="bio-val"><a href="mailto:ckchandankumar272@gmail.com"
+                    class="bio-link">ckchandankumar272@gmail.com</a></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Family Background -->
+          <div class="biodata-card glass-card">
+            <div class="biodata-card-header">
+              <span class="biodata-badge-icon">👨‍👩‍👧‍👦</span>
+              <h3 class="biodata-title">Family Background</h3>
+            </div>
+            <div class="biodata-list">
+              <div class="bio-row">
+                <span class="bio-key">Father's Name:</span>
+                <span class="bio-val"><strong>Mr. Jagnarayan Singh</strong></span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key">Father's Occupation:</span>
+                <span class="bio-val">Farmer (कृषक)</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key">Mother's Name:</span>
+                <span class="bio-val"><strong>Mrs. Rina Devi</strong></span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key">Mother's Occupation:</span>
+                <span class="bio-val">House Maker (गृहणी)</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key">Elder Sister:</span>
+                <span class="bio-val">Soni Kushwaha</span>
+              </div>
+              <div class="bio-row">
+                <span class="bio-key">Younger Brother:</span>
+                <span class="bio-val">Vishal Kumar Kushwaha</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Address & Residence -->
+          <div class="biodata-card glass-card biodata-span-2">
+            <div class="biodata-card-header">
+              <span class="biodata-badge-icon">🏡</span>
+              <h3 class="biodata-title">Permanent Residential Address</h3>
+            </div>
+            <div class="address-box">
+              <p class="address-line"><strong>Village / Post:</strong> Sarna Bhanpur</p>
+              <p class="address-line"><strong>Block / Police Station:</strong> Dinara</p>
+              <p class="address-line"><strong>District:</strong> Rohtas</p>
+              <p class="address-line"><strong>State &amp; PIN Code:</strong> Bihar — 802213</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobbies & Personal Interests -->
+        <div class="hobbies-wrapper">
+          <h3 class="hobbies-heading">🌟 Hobbies &amp; Passion Areas</h3>
+          <div class="hobbies-grid">
+            <div class="hobby-card glass-card">
+              <span class="hobby-icon">🔍</span>
+              <h4 class="hobby-name">Online Searching &amp; Deep Research</h4>
+              <p class="hobby-desc">Exploring tech trends, developer forums, online problem solving, and digital
+                tutorials.</p>
+            </div>
+            <div class="hobby-card glass-card">
+              <span class="hobby-icon">🏋️‍♂️</span>
+              <h4 class="hobby-name">Fitness &amp; Gym</h4>
+              <p class="hobby-desc">Daily physical discipline, strength conditioning, healthy lifestyle, and mental
+                focus.</p>
+            </div>
+            <div class="hobby-card glass-card">
+              <span class="hobby-icon">📚</span>
+              <h4 class="hobby-name">Reading &amp; Study</h4>
+              <p class="hobby-desc">Reading technical documentation, self-improvement literature, and academic
+                textbooks.</p>
+            </div>
+            <div class="hobby-card glass-card">
+              <span class="hobby-icon">🚀</span>
+              <h4 class="hobby-name">Learning New Technologies</h4>
+              <p class="hobby-desc">Curious exploration of modern AI tools, software frameworks, and computing
+                innovations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;snapshots /&gt;</span>
+          <h2 class="section-title">Chandan Kushwaha — Visual Profile</h2>
+          <p class="section-subtitle">Authentic moments and gallery portraits of Chandan.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item glass-card">
+            <div class="gallery-media">
+              <img src="./assets/images/chandan-portrait.jpg" alt="Chandan Kushwaha Portrait" class="gallery-img"
+                loading="lazy">
+              <div class="gallery-caption">
+                <span class="caption-title">Chandan Kushwaha</span>
+                <span class="caption-sub">Professional Portrait</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item glass-card">
+            <div class="gallery-media">
+              <img src="./assets/images/chandan-bridge.jpg" alt="Chandan Kushwaha Suspension Bridge" class="gallery-img"
+                loading="lazy">
+              <div class="gallery-caption">
+                <span class="caption-title">Exploration &amp; Nature</span>
+                <span class="caption-sub">Suspension Bridge in Scenic Hills</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;practical-work /&gt;</span>
+          <h2 class="section-title">Technical Projects &amp; Lab Implementations</h2>
+          <p class="section-subtitle">Real-world applications applying Data Analytics, Python, SQL, and Software
+            Engineering.</p>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Project 1: Data Analytics -->
+          <article class="project-card glass-card" data-project="data">
+            <div class="project-media-wrapper">
+              <img src="./assets/images/project-fintech.jpg" alt="Data Analytics & Power BI Dashboard"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm btn-view-modal" data-project-id="analytics"
+                  aria-label="View Project Case Study">
+                  View Project Details
+                </button>
+              </div>
+              <div class="project-badge">Power BI • SQL Analytics</div>
+            </div>
+            <div class="project-content">
+              <div class="project-tech-tags">
+                <span class="tech-tag">Power BI</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Excel</span>
+              </div>
+              <h3 class="project-title">Business Analytics &amp; Sales KPI Dashboard</h3>
+              <p class="project-summary">
+                Comprehensive data intelligence dashboard built with Power BI and SQL to analyze sales metrics, profit
+                trends, regional performance, and customer retention.
+              </p>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm btn-view-modal" data-project-id="analytics">
+                  Case Study
+                </button>
+                <a href="#contact" class="btn btn-ghost btn-sm">
+                  <span>Inquire</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Database Management System -->
+          <article class="project-card glass-card" data-project="dbms">
+            <div class="project-media-wrapper">
+              <img src="./assets/images/project-cloud.jpg" alt="Student Database Management System" class="project-img"
+                loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm btn-view-modal" data-project-id="dbms"
+                  aria-label="View Project Case Study">
+                  View Project Details
+                </button>
+              </div>
+              <div class="project-badge">DBMS • Java &amp; SQL</div>
+            </div>
+            <div class="project-content">
+              <div class="project-tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">MySQL / DBMS</span>
+                <span class="tech-tag">JDBC</span>
+                <span class="tech-tag">OOP</span>
+              </div>
+              <h3 class="project-title">Student &amp; College Records Management System</h3>
+              <p class="project-summary">
+                Relational database application designed for educational institutions to automate student admission
+                records, marks evaluation, fee payment tracking, and automated reporting.
+              </p>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm btn-view-modal" data-project-id="dbms">
+                  Case Study
+                </button>
+                <a href="#contact" class="btn btn-ghost btn-sm">
+                  <span>Inquire</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Python Automation & Utilities -->
+          <article class="project-card glass-card" data-project="python">
+            <div class="project-media-wrapper">
+              <img src="./assets/images/project-ai.jpg" alt="Python Data Extraction & Automation Engine"
+                class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm btn-view-modal" data-project-id="python"
+                  aria-label="View Project Case Study">
+                  View Project Details
+                </button>
+              </div>
+              <div class="project-badge">Python • Automation</div>
+            </div>
+            <div class="project-content">
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python 3</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">File I/O</span>
+                <span class="tech-tag">GitHub</span>
+              </div>
+              <h3 class="project-title">Automated Data Extraction &amp; File Parser</h3>
+              <p class="project-summary">
+                Python automated scripts for cleaning, sorting, and transforming messy Excel and CSV datasets into
+                structured SQL tables for rapid business intelligence.
+              </p>
+              <div class="project-actions">
+                <button class="btn btn-outline btn-sm btn-view-modal" data-project-id="python">
+                  Case Study
+                </button>
+                <a href="#contact" class="btn btn-ghost btn-sm">
+                  <span>Inquire</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Developer Terminal Section -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;dev-console /&gt;</span>
+          <h2 class="section-title">Chandan's Interactive Terminal</h2>
+          <p class="section-subtitle">Type commands or click quick-run chips to inspect verified credentials, bio-data,
+            and contacts.</p>
+        </div>
+
+        <div class="terminal-window glass-card" id="terminal-window">
+          <div class="terminal-titlebar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-title">chandan@kushwaha-pc: ~ (bca-shriram)</span>
+            <div class="terminal-chip">CGPA: 8.36</div>
+          </div>
+
+          <div class="terminal-body" id="terminal-output" tabindex="0" role="region" aria-label="Terminal Output">
+            <div class="term-line welcome-line">Welcome to Chandan Kushwaha's Interactive Terminal Shell</div>
+            <div class="term-line muted-line">Type <span class="term-highlight">help</span> to list commands, or click
+              any chip below to run instantly.</div>
+          </div>
+
+          <div class="terminal-quick-chips">
+            <button class="chip-cmd" data-cmd="whoami">whoami</button>
+            <button class="chip-cmd" data-cmd="education">education</button>
+            <button class="chip-cmd" data-cmd="biodata">biodata</button>
+            <button class="chip-cmd" data-cmd="family">family</button>
+            <button class="chip-cmd" data-cmd="skills">skills</button>
+            <button class="chip-cmd" data-cmd="contact">contact</button>
+            <button class="chip-cmd" data-cmd="clear">clear</button>
+          </div>
+
+          <form class="terminal-input-bar" id="terminal-form" autocomplete="off">
+            <span class="terminal-prompt-symbol">chandan@bca:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input"
+              placeholder="Type 'whoami', 'education', 'biodata', 'skills'..." spellcheck="false"
+              aria-label="Terminal Command Input">
+            <button type="submit" class="terminal-send-btn" aria-label="Execute Command">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">&lt;connect /&gt;</span>
+          <h2 class="section-title">Get In Touch With Chandan</h2>
+          <p class="section-subtitle">Reach out for academic collaborations, technical internships, or personal
+            inquiries.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Information Card -->
+          <div class="contact-info-card glass-card">
+            <h3 class="card-heading">
+              <span class="code-symbol">&#x2F;&#x2F;</span> Direct Contacts
+            </h3>
+            <p>
+              Feel free to call, WhatsApp, or email me anytime. I am prompt in responding and eager to connect!
+            </p>
+
+            <div class="contact-links-list">
+              <a href="tel:+917061350981" class="contact-item" id="contact-link-phone">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <span class="contact-label">Mobile Phone</span>
+                  <span class="contact-val">+91 7061350981</span>
+                </div>
+              </a>
+
+              <a href="https://wa.me/917061350981" target="_blank" rel="noopener noreferrer" class="contact-item"
+                id="contact-link-whatsapp">
+                <div class="contact-icon">💬</div>
+                <div>
+                  <span class="contact-label">WhatsApp Direct</span>
+                  <span class="contact-val">+91 7061350981 (Chat Now)</span>
+                </div>
+              </a>
+
+              <a href="mailto:ckchandankumar272@gmail.com" class="contact-item" id="contact-link-email">
+                <div class="contact-icon">📧</div>
+                <div>
+                  <span class="contact-label">Email Address</span>
+                  <span class="contact-val">ckchandankumar272@gmail.com</span>
+                </div>
+              </a>
+
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <span class="contact-label">Residential Address</span>
+                  <span class="contact-val">Sarna Bhanpur, Dinara, Rohtas, Bihar - 802213</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-card glass-card">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Ramesh Kumar"
+                    required>
+                  <span class="field-error" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Your Email / Phone <span
+                      class="required">*</span></label>
+                  <input type="text" id="contact-email" name="email" class="form-input"
+                    placeholder="ramesh@example.com / 9876543210" required>
+                  <span class="field-error" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Purpose of Contact</label>
+                <select id="contact-subject" name="subject" class="form-input form-select">
+                  <option value="internship">Internship / Job Opportunity</option>
+                  <option value="academic">College / BCA Academic Collaboration</option>
+                  <option value="biodata">Personal Bio-Data Inquiry</option>
+                  <option value="general">General Message / Connect</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Your Message <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" class="form-input form-textarea" rows="4"
+                  placeholder="Write your message here..." required></textarea>
+                <span class="field-error" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="contact-submit-btn">
+                <span class="btn-text">Send Message to Chandan</span>
+                <span class="btn-spinner" style="display: none;"></span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  class="btn-icon">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">Chandan</span>
+          <span class="logo-dot">.</span>
+          <span class="logo-role">Kushwaha</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">BCA Student • Shri Ram Group of College • Muzaffarnagar (Delhi NCR)</p>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-time-badge">
+          <span class="clock-icon">⏱️</span>
+          <span>Rohtas / Delhi Time: </span>
+          <strong id="live-clock">--:--:--</strong>
+        </div>
+        <p class="copyright">&copy; 2026 Chandan Kushwaha. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="btn btn-ghost btn-sm back-to-top" id="btn-back-to-top" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card glass-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Resume & Official Bio-Data Modal -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card resume-card glass-card">
+      <div class="resume-modal-header">
+        <div>
+          <h3 class="resume-modal-title">Official Bio-Data &amp; Curriculum Vitae</h3>
+          <span class="resume-modal-sub">Mr. Chandan Kushwaha • BCA Scholar</span>
+        </div>
+        <div class="resume-header-actions">
+          <button class="btn btn-primary btn-sm" id="btn-print-resume">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print / Save PDF</span>
+          </button>
+          <button class="modal-close-btn resume-close-btn" id="resume-close-btn"
+            aria-label="Close resume modal">&times;</button>
+        </div>
+      </div>
+      <div class="resume-modal-body" id="resume-content-print">
+        <div class="resume-sheet">
+          <header class="resume-doc-header">
+            <div>
+              <h2 class="resume-name">CHANDAN KUSHWAHA</h2>
+              <div class="resume-headline">BCA Student | Software Engineering &amp; Data Analytics Enthusiast</div>
+              <div style="font-size: 0.88rem; color: #64748b; margin-top: 0.25rem;">Shri Ram Group of College,
+                Muzaffarnagar (Delhi NCR)</div>
+            </div>
+            <div class="resume-contact-meta">
+              <div>📱 <strong>Mobile:</strong> +91 7061350981</div>
+              <div>📧 <strong>Email:</strong> ckchandankumar272@gmail.com</div>
+              <div>📍 <strong>Address:</strong> Sarna Bhanpur, Dinara, Rohtas, Bihar - 802213</div>
+              <div>🎂 <strong>DOB:</strong> 27 March 2007 | Status: Single</div>
+            </div>
+          </header>
+
+          <section class="resume-section">
+            <h3 class="resume-sec-title">Personal Bio-Data</h3>
+            <table class="resume-table"
+              style="width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-bottom: 0.5rem;">
+              <tr>
+                <td style="padding: 4px 8px; font-weight: bold; width: 25%;">Full Name:</td>
+                <td style="padding: 4px 8px;">Mr. Chandan Kushwaha</td>
+                <td style="padding: 4px 8px; font-weight: bold; width: 25%;">Religion / Caste:</td>
+                <td style="padding: 4px 8px;">Hindu / Kushwaha</td>
+              </tr>
+              <tr>
+                <td style="padding: 4px 8px; font-weight: bold;">Father's Name:</td>
+                <td style="padding: 4px 8px;">Mr. Jagnarayan Singh (Farmer)</td>
+                <td style="padding: 4px 8px; font-weight: bold;">Mother's Name:</td>
+                <td style="padding: 4px 8px;">Mrs. Rina Devi (House Maker)</td>
+              </tr>
+              <tr>
+                <td style="padding: 4px 8px; font-weight: bold;">Siblings:</td>
+                <td style="padding: 4px 8px;" colspan="3">Elder Sister: Soni Kushwaha | Younger Brother: Vishal Kumar
+                  Kushwaha</td>
+              </tr>
+            </table>
+          </section>
+
+          <section class="resume-section">
+            <h3 class="resume-sec-title">Academic Qualifications</h3>
+            <table class="resume-table" style="width: 100%; border-collapse: collapse; font-size: 0.88rem;">
+              <tr style="background: rgba(255,255,255,0.06); text-align: left;">
+                <th style="padding: 6px 8px;">Qualification</th>
+                <th style="padding: 6px 8px;">Board / Institute</th>
+                <th style="padding: 6px 8px;">Year / Duration</th>
+                <th style="padding: 6px 8px;">Percentage / CGPA</th>
+              </tr>
+              <tr>
+                <td style="padding: 6px 8px;"><strong>BCA (Bachelor of Computer Applications)</strong></td>
+                <td style="padding: 6px 8px;">Shri Ram Group of College, Muzaffarnagar (Delhi NCR)</td>
+                <td style="padding: 6px 8px;">2026 – 2029 (1st Year)</td>
+                <td style="padding: 6px 8px;"><strong>8.36 CGPA (2nd Sem)</strong></td>
+              </tr>
+              <tr>
+                <td style="padding: 6px 8px;"><strong>Intermediate (Class 12th)</strong></td>
+                <td style="padding: 6px 8px;">BSEB Patna</td>
+                <td style="padding: 6px 8px;">2025</td>
+                <td style="padding: 6px 8px;">56.4%</td>
+              </tr>
+              <tr>
+                <td style="padding: 6px 8px;"><strong>Matriculation (Class 10th)</strong></td>
+                <td style="padding: 6px 8px;">BSEB Patna</td>
+                <td style="padding: 6px 8px;">2023</td>
+                <td style="padding: 6px 8px;">57.6%</td>
+              </tr>
+            </table>
+          </section>
+
+          <section class="resume-section">
+            <h3 class="resume-sec-title">Technical Skills</h3>
+            <p style="font-size: 0.9rem; line-height: 1.6;">
+              <strong>Programming Languages:</strong> Python, C / C++, Java, SQL<br>
+              <strong>Data Analytics &amp; Tools:</strong> Power BI, Database Management Systems (DBMS), Microsoft
+              Office, Internet Operations<br>
+              <strong>Core CS Foundations:</strong> Software Engineering, Computer Networks, Operating Systems, GitHub
+              Version Control<br>
+              <strong>Professional Soft Skills:</strong> Communication &amp; Customer Handling, Problem Solving, Rapid
+              Learning
+            </p>
+          </section>
+
+          <section class="resume-section">
+            <h3 class="resume-sec-title">Hobbies &amp; Interests</h3>
+            <p style="font-size: 0.9rem;">
+              Online Searching &amp; Deep Tech Research, Reading, Fitness / Gym Training, Learning New Technologies
+              &amp; Internet Exploration.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
